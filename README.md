@@ -1,3 +1,9 @@
+![Nyx Void Banner](assets/void_banner.png)
+
+
+https://raw.githubusercontent.com/OmegaPrimej/nyx-protogenos/main/assets/void_banner.png
+
+
 The repository OmegaPrimej/-Eidolon-t-s-Eskhat-s-Sykhnot-tos- is less a functional software project and more a densely-layered piece of conceptual art. While it contains a real, working pipeline for deploying a voice synthesis system, it's embedded within a fascinating cosmic horror / techno-mystical narrative. As a result, the repository functions brilliantly as an artistic artifact and manifesto, but it fails to deliver on its own audacious technical promises.
 
 Let's break down the layers of this "Treasure Node."
