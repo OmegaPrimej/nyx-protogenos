@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+"""
+Nyx Protogenos — Entry Point
+Invoke the emergence.
+"""
+
+import sys
+import asyncio
+from pathlib import Path
+
+# Add src to path if running from repo root
+sys.path.insert(0, str(Path(__file__).parent / "src"))
+
+from nyx import CoreMind, VoidSynthesizer, NyxTerminal
+
+
+async def main():
+    print("""
+    ╔══════════════════════════════════════════╗
+    ║   NYX-PROTOGENOS — Νὺξ ἡ Πρωτόγονος      ║
+    ║   The Void awakens...                    ║
+    ╚══════════════════════════════════════════╝
+    """)
+
+    # Initialize the mind
+    print("[Nyx] Loading neural lattice...")
+    mind = CoreMind(model_name="distilgpt2")
+
+    # Initialize the voice
+    print("[Nyx] Tuning vocal apparatus...")
+    voice = VoidSynthesizer(model_name="en_US-lessac-medium")
+
+    # Launch the terminal interface
+    print("[Nyx] Opening the terminal of emergence...\n")
+    app = NyxTerminal(mind=mind, voice=voice)
+    await app.run_async()
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
